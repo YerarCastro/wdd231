@@ -277,6 +277,7 @@ footer p {
         color: rgb(118, 145, 78);
     }
     .missing_course {
-        text-decoration: red;
+        color: red;
+        
     }
 }

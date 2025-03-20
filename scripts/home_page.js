@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         closeButton.style.display = "none"; 
     });
 
-    // 📌 Cerrar el menú si el usuario hace clic fuera del nav
+    
     document.addEventListener("click", function (event) {
         if (!nav.contains(event.target) && !openButton.contains(event.target)) {
             nav.classList.remove("nav-active");
@@ -40,4 +40,27 @@ document.addEventListener("DOMContentLoaded", function () {
             closeButton.style.display = "none"; 
         }
     });
+   
+    
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const lastModifiedElement = document.getElementById("lastModified");
+
+    
+    if (lastModifiedElement) {
+        const lastModified = new Date(document.lastModified);
+        
+        
+        const formattedDate = `${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}`;
+
+        lastModifiedElement.textContent = `Last Modified: ${formattedDate}`;
+    }
+
+    
+    const currentYearElement = document.getElementById("currentYear");
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 });
