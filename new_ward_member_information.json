@@ -1,0 +1,29 @@
+{
+    "family_name":"castro",
+    "date_of_arrival": "10/09/2024",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "individual_family_members": [
+        {
+            "name": "isai",
+            "gender": "male",
+            "birthdate": "09/10/2001"
+        },
+        {
+           "name": "jacqueline",
+            "gender": "female",
+            "birthdate": "07/24/2000" 
+        },
+        {
+            "name": "aura",
+            "gender": "female",
+            "birthdate": "11/10/2024"
+        },
+        {
+            "name": "mandarino",
+            "gender": "male",
+            "birthdate": "18/04/2015"
+        }
+    ]
+
+}
